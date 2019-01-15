@@ -8,8 +8,19 @@
 <link rel="stylesheet" href="style.scss">
 <input id="file" type="file">
 <br>
-<canvas idth="400" height="400" id="drawBoard"></canvas>
+<input id="numRepeat" type="number" step="1" min="0">
+<button id="btnRepeat">smoother</button>
+<br>
+<canvas id="drawBoard"></canvas>
 <script src="main.ts"></script>
+<style>
+  canvas#drawBoard {
+    max-width: 90%;
+    max-height: 90%;
+    width: calc(100vw - 8px);
+    height: calc(100vh - 5em);
+  }
+</style>
 </body>
 </html>
 
